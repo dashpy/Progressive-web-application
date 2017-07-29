@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [];
+var precacheConfig = [["css/app.css","e4aa30c8b84c90bb543372696fc81866"],["css/materialize.css","62261f614f306447d4c35637940e33e5"],["css/materialize.min.css","eaf5da80270e91228573c6e530645323"],["fonts/roboto/Roboto-Bold.woff","eed9aab5449cc9c8430d7d258108f602"],["fonts/roboto/Roboto-Bold.woff2","c0f1e4a4fdfb8048c72e86aadb2a247d"],["fonts/roboto/Roboto-Light.woff","ea36cd9a0e9eee97012a67b8a4570d7b"],["fonts/roboto/Roboto-Light.woff2","3c37aa69cd77e6a53a067170fa8fe2e9"],["fonts/roboto/Roboto-Medium.woff","cf4d60bc0b1d4b2314085919a00e1724"],["fonts/roboto/Roboto-Medium.woff2","1561b424aaef2f704bbd89155b3ce514"],["fonts/roboto/Roboto-Regular.woff","3cf6adf61054c328b1b0ddcd8f9ce24d"],["fonts/roboto/Roboto-Regular.woff2","5136cbe62a63604402f2fedb97f246f8"],["fonts/roboto/Roboto-Thin.woff","44b78f142603eb69f593ed4002ed7a4a"],["fonts/roboto/Roboto-Thin.woff2","1f35e6a11d27d2e10d28946d42332dc5"],["images/card-bg.png","a998e081458167111888b9e885091f19"],["images/github.svg","9329315b1b1acb1ab416b8dbb86ce46b"],["images/gt-icon192x192.png","990e29e1aa645d94eef46e3b92ae87c7"],["index.html","1a61ced761f0f0e7679402de800717bf"],["js/app.js","535ed1933819d9c7dceecc39b16bb72a"],["js/jquery-2.1.1.min.js","6631a779321bc03f4a5281d3ff526254"],["js/materialize.js","ca4455f4383309b2dd473384a2739ac7"],["js/materialize.min.js","bdc52fb7c28dd22efeee484bf8b7c4c5"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"PWADemo-v2"}});
+toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"scotchPWA-v6"}});
 
 
 
